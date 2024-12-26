@@ -2,6 +2,8 @@ import React from 'react'
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 
+const secretKey = import.meta.env.VITE_SECRET_KEY;
+
 const Contact = () => {
     const [result, setResult] = React.useState("");
 
@@ -11,7 +13,7 @@ const Contact = () => {
     const formData = new FormData(event.target);
     console.log(formData);
 
-    formData.append("access_key", "881c547b-7e54-4e0a-8b53-0a9e1518902c");
+    formData.append("access_key", secretKey);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
