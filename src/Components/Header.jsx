@@ -10,7 +10,7 @@ const Header = () => {
   
       {/* Skeleton Loader */}
       {!imageLoaded && (
-        <div className='absolute inset-0 bg-gray-200 animate-pulse'></div>
+        <div className='absolute inset-0 bg-gray-200'></div>
       )}
 
       {/* Preloading the Image */}
