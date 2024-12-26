@@ -11,7 +11,6 @@ const Contact = () => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-    console.log(formData);
 
     formData.append("access_key", secretKey);
 
