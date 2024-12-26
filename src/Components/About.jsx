@@ -17,7 +17,7 @@ const About = () => {
             <img 
               src="about_img.jpg" 
               alt="TTISR Logo - Empowering Growth, Delivering Talent" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fill"
               loading="lazy"
             />
           </div>
